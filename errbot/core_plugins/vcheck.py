@@ -33,6 +33,7 @@ class VersionChecker(BotPlugin):
             self.start_poller(3600 * 24, self.version_check)  # once every 24H
             super().activate()
         else:
+            pass
             self.log.info("Skip version checking under %s mode.", self.mode)
 
     def deactivate(self):
